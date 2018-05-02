@@ -1,5 +1,7 @@
 .PHONY: all
 
+PYTHON_VERSION=$(shell python -c 'import sys; print("%i" % (sys.hexversion<0x03000000))')
+
 all: deps site
 
 deps:
@@ -10,9 +12,15 @@ deps:
 
 site:
 	jekyll build
+	./build.sh
 
 serve:
-	jekyll serve
+	cd _site/ && \
+		if [ ${PYTHON_VERSION} -eq 0 ]; then \
+			python3 -m http.server 4000; \
+		else \
+			python2 -m SimpleHTTPSever 4000; \
+		fi
 
 clean:
 	rm -rf _site/
