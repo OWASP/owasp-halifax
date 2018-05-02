@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="OWASP Halifax Website">
+    <meta name="author" content="Lilly Chalupowski">
+    <title>{{ page.title }}</title>
+    <link rel="icon" href="/assets/img/favicon/favicon.ico"/>
+    <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="/assets/lib/theme/css/theme.css" type="text/css" media="screen"/>
+    {% if page.css %}
+    <link rel="stylesheet" href="{{ page.css }}" type="text/css" media="screen" />
+    {% endif %}
+    <script type="text/javascript" src="/assets/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/lib/popper.js/popper.min.js"></script>
+    <script type="text/javascript" src="/assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/lib/theme/js/theme.js"></script>
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/"><img style="display:inline;width:5%;" src="/assets/img/logo.png"/> OWASP Halifax</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Resources
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Calendar</a>
+            <a class="dropdown-item" href="#">Wiki</a>
+            <a class="dropdown-item" href="#">Submit a Talk</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Contribute
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Donate</a>
+            <a class="dropdown-item" href="#">Sponser</a>
+            <a class="dropdown-item" href="#">Submit a Talk</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <body>
+    <div role="main" class="container">
+      {{ content }}
+    </div>
+  </body>
+  {% if page.js %}
+  <script type="text/javascript" src="{{ page.js }}"></script>
+  {% endif %}
+</html>
