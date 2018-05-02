@@ -9,7 +9,7 @@
 
 Please email `lillypadgirl86@gmail.com`.
 
-__How money is used:___
+__How money is used:__
 - Pay for Venue
 - Pay for `Meetups` Group Fee
 - Pay for Rental Equipment
