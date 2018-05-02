@@ -1,6 +1,6 @@
 function init(){
   try {
-    document.getElementById('nav-link-home').className = 'nav-item active';
+    document.getElementById('nav-link-contact').className = 'nav-item active';
     return true;
   } catch(error){
     throw error;
