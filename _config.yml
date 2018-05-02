@@ -10,6 +10,7 @@ exclude:
   - Makefile
   - LICENSE
   - build.sh
+  - watch.sh
   - package.json
   - package-lock.json
   - README.md
