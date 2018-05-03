@@ -1,0 +1,15 @@
+.blog-links{
+    color: #4e5291;
+    font-size: large;
+    font-weight: bold;
+}
+
+.blog-container{
+    background-color: lightgray;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
