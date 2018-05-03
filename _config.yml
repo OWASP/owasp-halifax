@@ -3,9 +3,9 @@ author: Lilly Chalupowski
 email: lillypadgirl86@gmail.com
 description: OWASP Halifax Website
 github_username: lillypad
-permalink: /owasp-halifax
 include:
   - _pages
+  - _slides
 exclude:
   - Makefile
   - LICENSE
