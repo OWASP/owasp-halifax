@@ -11,7 +11,7 @@ deps:
 	cp -r node_modules/jquery/dist/ assets/lib/jquery/
 	cp -r node_modules/fullcalendar/dist/ assets/lib/fullcalendar/
 	cp -r node_modules/moment/min/ assets/lib/moment/
-
+	cp -r node_modules/qtip2/dist/ assets/lib/qtip2/
 site:
 	jekyll build
 	./build.sh
@@ -33,4 +33,5 @@ clean:
 		rm -rf popper.js/ && \
 		rm -rf jquery/ && \
 		rm -rf fullcalendar/ && \
-		rm -rf moment/
+		rm -rf moment/ && \
+		rm -rf qtip2/
