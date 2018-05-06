@@ -5,6 +5,7 @@ PYTHON_VERSION=$(shell python -c 'import sys; print("%i" % (sys.hexversion<0x030
 all: deps site
 
 deps:
+	bundle install
 	npm install
 	cp -r node_modules/bootstrap/dist/ assets/lib/bootstrap/
 	cp -r node_modules/popper.js/dist/ assets/lib/popper.js/
@@ -28,6 +29,7 @@ clean:
 	rm -rf _site/
 	rm -rf node_modules/
 	rm -f package-lock.json
+	rm -f Gemfile.lock
 	cd assets/lib/ && \
 		rm -rf bootstrap/ && \
 		rm -rf popper.js/ && \
