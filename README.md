@@ -5,9 +5,9 @@
 - [Lilly Chalupowski](https://lillypad.github.io)
 - Tyler Parrott
 
-# Donating and Sponsoring
+# Donating / Supporting OWASP Halifax
 
-Please email `lillypadgirl86@gmail.com`.
+Please email `lilly.chalupowski@owasp.org`.
 
 __How money is used:__
 - Pay for Venue
@@ -19,7 +19,7 @@ OWASP is a `non-profit` security movement and will always stay that way.
 
 # Submitting a Talk
 
-Please submit your talk to `lillypadgirl86@gmail.com`
+Please submit your talk to `lilly.chalupowski@owasp.org`
 
 Your email should contain the following:
 - Name
