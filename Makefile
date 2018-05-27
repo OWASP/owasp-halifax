@@ -6,7 +6,7 @@ all: deps lint site
 
 deps:
 	bundle install --quiet
-	npm install
+	npm install &> /dev/null
 	cp -r node_modules/bootstrap/dist/ assets/lib/bootstrap/
 	cp -r node_modules/popper.js/dist/ assets/lib/popper.js/
 	cp -r node_modules/jquery/dist/ assets/lib/jquery/
