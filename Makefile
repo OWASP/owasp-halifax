@@ -1,8 +1,10 @@
 .PHONY: all
+.PHONY: update
 
 PYTHON_VERSION=$(shell python -c 'import sys; print("%i" % (sys.hexversion<0x03000000))')
 
 all: deps lint site
+update: lint site
 
 deps:
 	bundle install --quiet
