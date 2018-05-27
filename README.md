@@ -3,7 +3,7 @@
 # Maintainers and Organizers
 
 - [Lilly Chalupowski](https://lillypad.github.io)
-- Tyler Parrott
+- [Tyler Parrott](mailto:tyler.parrott@owasp.org)
 
 # Donating / Supporting OWASP Halifax
 
