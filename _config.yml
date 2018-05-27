@@ -15,6 +15,9 @@ exclude:
   - watch.sh
   - package.json
   - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - Dockerfile
   - README.md
   - node_modules
 markdown: kramdown

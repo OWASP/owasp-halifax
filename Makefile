@@ -2,10 +2,10 @@
 
 PYTHON_VERSION=$(shell python -c 'import sys; print("%i" % (sys.hexversion<0x03000000))')
 
-all: deps site
+all: deps lint site
 
 deps:
-	bundle install
+	bundle install --quiet
 	npm install
 	cp -r node_modules/bootstrap/dist/ assets/lib/bootstrap/
 	cp -r node_modules/popper.js/dist/ assets/lib/popper.js/
@@ -14,7 +14,7 @@ deps:
 	cp -r node_modules/moment/min/ assets/lib/moment/
 	cp -r node_modules/qtip2/dist/ assets/lib/qtip2/
 site:
-	jekyll build
+	jekyll build -q
 	./build.sh
 
 serve:
@@ -24,6 +24,10 @@ serve:
 		else \
 			python2 -m SimpleHTTPSever 4000; \
 		fi
+
+lint:
+	find . -name _site -prune -o -name '*.html' | xargs -I {} htmlhint {}
+	find assets/pages/ assets/lib/theme/ -name _site -prune -o -name '*.js' | xargs -I {} jshint {}
 
 clean:
 	rm -rf _site/
