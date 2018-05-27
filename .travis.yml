@@ -1,0 +1,13 @@
+sudo: required
+
+services:
+  - docker
+
+stages:
+  - ubuntu
+
+jobs:
+  include:
+    - stage: ubuntu
+      language: html
+      script: docker build -t owasp-halifax .

@@ -29,6 +29,12 @@ lint:
 	find . -name _site -prune -o -name '*.html' | xargs -I {} htmlhint {}
 	find assets/pages/ assets/lib/theme/ -name _site -prune -o -name '*.js' | xargs -I {} jshint {}
 
+install:
+	cp -a _site/. /var/www/html/
+
+uninstall:
+	rm -rf /var/www/html/*
+
 clean:
 	rm -rf _site/
 	rm -rf node_modules/
