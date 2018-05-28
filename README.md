@@ -1,9 +1,10 @@
+[![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/3.0/80x15.png)](https://raw.githubusercontent.com/OWASP/owasp-halifax/master/LICENSE)
 # OWASP Halifax Website and Wiki
 
 # Maintainers and Organizers
 
 - [Lilly Chalupowski](https://lillypad.github.io)
-- Tyler Parrott
+- [Tyler Parrott](mailto:tyler.parrott@owasp.org)
 
 # Donating / Supporting OWASP Halifax
 
