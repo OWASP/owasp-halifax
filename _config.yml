@@ -1,6 +1,6 @@
 title: OWASP Halifax
 author: Lilly Chalupowski
-email: lillypadgirl86@gmail.com
+email: lilly.chalupowski@owasp.org
 description: OWASP Halifax Website
 github_username: lillypad
 plugins:
@@ -15,6 +15,9 @@ exclude:
   - watch.sh
   - package.json
   - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - Dockerfile
   - README.md
   - node_modules
 markdown: kramdown
