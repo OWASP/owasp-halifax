@@ -1,3 +1,4 @@
+[![Build Status](https://api.travis-ci.org/OWASP/owasp-halifax.svg?branch=master)](https://travis-ci.org/OWASP/owasp-halifax)
 [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/3.0/80x15.png)](https://raw.githubusercontent.com/OWASP/owasp-halifax/master/LICENSE)
 # OWASP Halifax Website and Wiki
 
@@ -5,6 +6,38 @@
 
 - [Lilly Chalupowski](https://lillypad.github.io)
 - [Tyler Parrott](mailto:tyler.parrott@owasp.org)
+
+# Dependancies
+- npm
+- python
+- ruby
+- jekyll
+
+# Building The Site
+
+__Download:__
+```bash
+git clone https://github.com/owasp/owasp-halifax.git
+cd owasp-halifax/
+```
+
+__Build and Serve Locally:__
+```bash
+make
+make serve
+```
+
+__Docker Build:__
+```bash
+sudo docker build -t owasp-halifax .
+```
+
+__Docker Compose:__
+```bash
+sudo docker-compose up .
+```
+
+__
 
 # Donating / Supporting OWASP Halifax
 
