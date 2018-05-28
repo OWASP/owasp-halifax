@@ -26,6 +26,7 @@ RUN adduser ${USER} sudo
 USER ${USER}
 WORKDIR /home/${USER}/
 RUN mkdir -p owasp-halifax/
+RUN mkdir -p .gem/
 ADD . owasp-halifax/
 USER root
 RUN chown -R ${USER}:${USER} owasp-halifax/
