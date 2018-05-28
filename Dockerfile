@@ -18,7 +18,7 @@ RUN apt-get install -qq git \
 	ruby-dev \
 	apache2 \
 	build-essential > /dev/null
-RUN gem install -q jekyll bundler htmlbeautifier htmlcompressor
+RUN gem install -q jekyll bundler htmlbeautifier htmlcompressor jekyll-tidy
 RUN npm install -g jshint htmlhint &> /dev/null
 RUN useradd -ms /bin/bash ${USER}
 RUN echo "${USER}:${PASS}" | chpasswd
@@ -26,7 +26,6 @@ RUN adduser ${USER} sudo
 USER ${USER}
 WORKDIR /home/${USER}/
 RUN mkdir -p owasp-halifax/
-RUN mkdir -p .gem/
 ADD . owasp-halifax/
 USER root
 RUN chown -R ${USER}:${USER} owasp-halifax/
