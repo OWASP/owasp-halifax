@@ -1,5 +1,5 @@
 {
-  "name": "owasp.halifax",
+  "name": "owasp-halifax",
   "version": "1.0.0",
   "description": "OWASP Halifax Website",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lillypad/owasp.halifax.git"
+    "url": "git+https://github.com/owasp/owasp-halifax.git"
   },
   "author": "Lilly Chalupowski",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lillypad/owasp.halifax/issues"
+    "url": "https://github.com/owasp/owasp-halifax/issues"
   },
-  "homepage": "https://github.com/lillypad/owasp.halifax#readme",
+  "homepage": "https://github.com/owasp/owasp-halifax#readme",
   "dependencies": {
     "bootstrap": "^4.1.1",
     "fullcalendar": "^3.9.0",
