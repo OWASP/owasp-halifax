@@ -18,7 +18,7 @@ RUN apt-get install -qq git \
 	ruby-dev \
 	apache2 \
 	build-essential > /dev/null
-RUN gem install -q jekyll bundler htmlbeautifier
+RUN gem install -q jekyll bundler htmlbeautifier htmlcompressor
 RUN npm install -g jshint htmlhint &> /dev/null
 RUN useradd -ms /bin/bash ${USER}
 RUN echo "${USER}:${PASS}" | chpasswd

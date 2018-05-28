@@ -2,6 +2,9 @@ version: '3'
 services:
   web:
     build: .
+    environment:
+      - USER: "dockerci"
+      - PASS: "dockerci"
     ports:
      - "80:80"
      - "5022:22"
