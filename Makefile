@@ -28,8 +28,8 @@ serve:
 		fi
 
 lint:
-	find . -name _site -prune -o -name '*.html' | xargs -I {} htmlhint {}
-	find assets/pages/ assets/lib/theme/ -name _site -prune -o -name '*.js' | xargs -I {} jshint {}
+	find . -type f -name "*.html" | grep -Pv '^\./_site|\./node_modules' | xargs -I {} htmlhint {}
+	find assets/pages/ assets/lib/theme/ -name '*.js' | xargs -I {} jshint {}
 
 install:
 	cp -a _site/. /var/www/html/
