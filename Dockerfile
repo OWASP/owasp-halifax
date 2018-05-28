@@ -19,7 +19,7 @@ RUN apt-get install -qq git \
 	apache2 \
 	build-essential > /dev/null
 RUN gem install -q jekyll bundler htmlbeautifier htmlcompressor jekyll-tidy
-RUN npm install -g jshint htmlhint &> /dev/null
+RUN npm install -g jshint htmlhint
 RUN useradd -ms /bin/bash ${USER}
 RUN echo "${USER}:${PASS}" | chpasswd
 RUN adduser ${USER} sudo
