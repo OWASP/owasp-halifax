@@ -1,3 +1,9 @@
+angel() {
+    while inotifywait -r -qq .; do
+      make update
+    done
+}
+
 daemon() {
     chsum1=""
 
@@ -12,4 +18,11 @@ daemon() {
     done
 }
 
-daemon
+# Prefer to use inotify-tools if they're available.
+# If not, just go with good ol' poll and sleep.
+if [ -x "$(command -v inotifywait)" ]; then
+  angel
+else
+  echo "Using less efficient poll/sleep watch. Consider installing inotify-tools."
+  daemon
+fi
