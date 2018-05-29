@@ -31,12 +31,12 @@ make serve
 
 __Docker Build:__
 ```bash
-sudo docker build -t owasp-halifax .
+docker build -t owasp-halifax .
 ```
 
 __Docker Compose:__
 ```bash
-sudo docker-compose up .
+docker-compose up .
 ```
 
 # Contributing
