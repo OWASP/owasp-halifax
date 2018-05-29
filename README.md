@@ -1,8 +1,10 @@
 [![Build Status](https://api.travis-ci.org/OWASP/owasp-halifax.svg?branch=master)](https://travis-ci.org/OWASP/owasp-halifax)
 [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/3.0/80x15.png)](https://raw.githubusercontent.com/OWASP/owasp-halifax/master/LICENSE)
-# OWASP Halifax Website and Wiki
+# OWASP Halifax Website
 
-# Maintainers and Organizers
+[Vist our Website Here!](https://owasp.github.io/owasp-halifax)
+
+# Chapter Leaders
 
 - [Lilly Chalupowski](https://lillypad.github.io)
 - [Tyler Parrott](mailto:tyler.parrott@owasp.org)
@@ -37,37 +39,68 @@ __Docker Compose:__
 sudo docker-compose up .
 ```
 
-__
-
-# Donating / Supporting OWASP Halifax
-
-Please email `lilly.chalupowski@owasp.org`.
-
-__How money is used:__
-- Pay for Venue
-- Pay for `Meetups` Group Fee
-- Pay for Rental Equipment
-- Pay for Snacks
-
-OWASP is a `non-profit` security movement and will always stay that way.
-
-# Submitting a Talk
-
-Please submit your talk to `lilly.chalupowski@owasp.org`
-
-Your email should contain the following:
-- Name
-- Email
-- Talk Title
-- Talk Description
-- Copy of your Slides
-
-We will then review your talk and upon approval you will be notified.
-
 # Contributing
 
-- Submitting Talks
-- Donations
-- Sponsoring
-- Bringing Snacks
-- Pull Requests
+__Continious Integration:__
+
+All commits to the `master` branch must first pass the `.travis.yml` checks.
+
+Both `javascript` and `html` linting is used so please check for syntax errors.
+
+__Commit Signing:__
+
+In order to contribute to the `develop` and `master` branches code signing is required.
+
+Generating a Key:
+```bash
+gpg --full-generate-key
+```
+
+Importing Keys:
+```bash
+gpg --allow-secret-key-import --import private.key
+gpg --import public.key
+srm --dod private.key
+```
+
+Get your `key-id`:
+```bash
+gpg --list-secret-keys --keyid-format LONG
+```
+
+Set Meta Data:
+```bash
+gpg --edit-key [key-id]
+gpg> adduid
+```
+NOTE: Your email must be the same as the one in `git config user.email`
+
+Set Trust level of `5`:
+```bash
+gpg> trust
+```
+NOTE: If you trust yourself that is
+
+Export Public Key:
+```bash
+gpg --armor --export [key-id]
+```
+
+NOTE: You need to import this in the GitHub web interface in your settings
+
+In the `owasp-halifax` repository:
+```bash
+git config --local user.email [same email from adduid]
+git config --local user.signingkey [key-id]
+git config --local commit.gpgsign true
+```
+
+You should now be able to make commits.
+
+If you have tty issues try this:
+```bash
+echo "export GPG_TRUST=$(tty)" >> ~/.bashrc
+source ~/.bashrc
+```
+
+If you have any trouble contributing to this repository please let us know and we can help.
