@@ -1,0 +1,9 @@
+.dockerignore
+.git
+.gitignore
+.travis.yml
+Dockerfile
+Gemfile.lock
+_site
+docker-compose.yml
+watch.sh

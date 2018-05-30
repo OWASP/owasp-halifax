@@ -11,13 +11,14 @@ include:
 exclude:
   - Makefile
   - LICENSE
-  - build.sh
   - watch.sh
   - package.json
   - package-lock.json
   - Gemfile
   - Gemfile.lock
   - Dockerfile
+  - docker-compose.yml
   - README.md
   - node_modules
 markdown: kramdown
+strict_front_matter: true
