@@ -21,3 +21,4 @@ exclude:
   - README.md
   - node_modules
 markdown: kramdown
+strict_front_matter: true
