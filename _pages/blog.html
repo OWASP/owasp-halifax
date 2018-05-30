@@ -2,15 +2,15 @@
 permalink: /pages/blog/
 layout: default
 title: Blog for OWASP Halifax
-css: /owasp-halifax/assets/pages/blog/css/blog.css
-js: /owasp-halifax/assets/pages/blog/js/blog.js
+css: /assets/pages/blog/css/blog.css
+js: /assets/pages/blog/js/blog.js
 ---
 
 <h2>OWASP Halifax Blog</h2>
 
 <div class="blog-container">
   {% for post in site.posts %}
-  <a class="blog-links" href="/owasp-halifax{{ post.url }}">{{ post.date }} - {{ post.title }}</a>
+  <a class="blog-links" href="{{ post.url }}">{{ post.date }} - {{ post.title }}</a>
   <br>
   {% endfor %}
 </div>
