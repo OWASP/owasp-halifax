@@ -17,6 +17,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - Dockerfile
+  - docker-compose.yml
   - README.md
   - node_modules
 markdown: kramdown
