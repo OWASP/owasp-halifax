@@ -17,7 +17,6 @@ deps:
 	cp -r node_modules/qtip2/dist/ assets/lib/qtip2/
 site:
 	jekyll build -q
-	./build.sh
 
 serve:
 	cd _site/ && \
