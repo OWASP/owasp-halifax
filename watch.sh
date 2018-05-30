@@ -1,5 +1,5 @@
 angel() {
-    while inotifywait -r -qq -e modify -e move -e delete -e attrib .; do
+    while inotifywait -r -qq -e modify -e move -e delete -e attrib --exclude '(.git/|_site/)' .; do
       make update
     done
 }
