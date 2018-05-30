@@ -1,5 +1,5 @@
 angel() {
-    while inotifywait -r -qq .; do
+    while inotifywait -r -qq -e modify .; do
       make update
     done
 }
