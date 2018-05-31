@@ -7,34 +7,40 @@
     <meta name="author" content="Lilly Chalupowski">
     <meta name="license" content="GPLv3">
     <title>{{ page.title }}</title>
-    <link rel="icon" href="/owasp-halifax/assets/img/favicon/favicon.ico"/>
-    <link rel="stylesheet" href="/owasp-halifax/assets/lib/bootstrap/css/bootstrap.min.css" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="/owasp-halifax/assets/lib/highlight.js/styles/monokai.css">
-    <link rel="stylesheet" href="/owasp-halifax/assets/lib/fullcalendar/fullcalendar.min.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="/owasp-halifax/assets/lib/qtip2/jquery.qtip.min.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="/owasp-halifax/assets/lib/theme/css/theme.css" type="text/css" media="screen"/>
+    <link rel="icon" href="{{ '/assets/img/favicon/favicon.ico' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/lib/bootstrap/css/bootstrap.min.css' | relative_url }}" type="text/css" media="screen">
+    <link rel="stylesheet" href="{{ '/assets/lib/highlight.js/styles/monokai.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/lib/fullcalendar/fullcalendar.min.css' | relative_url }}" type="text/css" media="screen">
+    <link rel="stylesheet" href="{{ '/assets/lib/qtip2/jquery.qtip.min.css' | relative_url }}" type="text/css" media="screen">
+    <link rel="stylesheet" href="{{ '/assets/lib/theme/css/theme.css' | relative_url }}" type="text/css" media="screen">
     {% if page.css %}
-    <link rel="stylesheet" href="{{ page.css }}" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{ page.css | relative_url }}" type="text/css" media="screen">
     {% endif %}
-    <script type="text/javascript" src="/owasp-halifax/assets/lib/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="/owasp-halifax/assets/lib/popper.js/popper.min.js"></script>
-    <script type="text/javascript" src="/owasp-halifax/assets/lib/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/owasp-halifax/assets/lib/qtip2/jquery.qtip.min.js"></script>
-    <script type="text/javascript" src="/owasp-halifax/assets/lib/moment/moment.min.js"></script>
-    <script type="text/javascript" src="/owasp-halifax/assets/lib/fullcalendar/fullcalendar.min.js"></script>
-    <script type="text/javascript" src="/owasp-halifax/assets/lib/highlight.js/highlight.pack.js"></script>
+    <script type="text/javascript" src="{{ '/assets/lib/jquery/jquery.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/lib/popper.js/popper.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/lib/bootstrap/js/bootstrap.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/lib/qtip2/jquery.qtip.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/lib/moment/moment.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/lib/fullcalendar/fullcalendar.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/lib/highlight.js/highlight.pack.js' | relative_url }}"></script>
     <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
-    <script type="text/javascript" src="/owasp-halifax/assets/lib/theme/js/theme.js"></script>
+    <script type="text/javascript" src="{{ '/assets/lib/theme/js/theme.js' | relative_url }}"></script>
   </head>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/owasp-halifax"><img style="max-width:50px;margin-top:-7px;" src="/owasp-halifax/assets/img/logo.png"/> OWASP Halifax</a>
+    <a class="navbar-brand" href="{{ '/' | relative_url }}">
+      <img style="max-width:50px;margin-top:-7px;" src="{{ '/assets/img/logo.png' | relative_url }}">
+      OWASP Halifax
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li id="nav-link-home" class="nav-item">
-          <a class="nav-link" href="/owasp-halifax">Home<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="{{ '/' | relative_url }}">
+            Home
+            <span class="sr-only">(current)</span>
+          </a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -44,8 +50,8 @@
             <a class="dropdown-item" target="_blank" href="https://www.meetup.com/OWASP-Halifax">Meetups</a>
             <a class="dropdown-item" target="_blank" href="https://owasphalifax.slack.com">Slack</a>
             <a class="dropdown-item" target="_blank" href="https://www.owasp.org/index.php/Halifax">Wiki</a>
-            <a class="dropdown-item" href="/owasp-halifax/pages/calendar">Calendar</a>
-            <a class="dropdown-item" href="/owasp-halifax/pages/slides">Slides</a>
+            <a class="dropdown-item" href="{{ '/pages/calendar' | relative_url }}">Calendar</a>
+            <a class="dropdown-item" href="{{ '/pages/slides' | relative_url }}">Slides</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -53,15 +59,15 @@
             Contribute
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="/owasp-halifax/pages/donate">Donate</a>
-            <a class="dropdown-item" href="/owasp-halifax/pages/submit">Submit a Talk</a>
+            <a class="dropdown-item" href="{{ '/pages/donate' | relative_url }}">Donate</a>
+            <a class="dropdown-item" href="{{ '/pages/submit' | relative_url }}">Submit a Talk</a>
           </div>
         </li>
         <li id="nav-link-blog" class="nav-item">
-          <a class="nav-link" href="/owasp-halifax/pages/blog">Blog</a>
+          <a class="nav-link" href="{{ '/pages/blog' | relative_url }}">Blog</a>
         </li>
         <li id="nav-link-contact" class="nav-item">
-          <a class="nav-link" href="/owasp-halifax/pages/contact">Contact</a>
+          <a class="nav-link" href="{{ '/pages/contact' | relative_url }}">Contact</a>
         </li>
       </ul>
     </div>
@@ -72,6 +78,6 @@
     </div>
   </body>
   {% if page.js %}
-  <script type="text/javascript" src="{{ page.js }}"></script>
+    <script type="text/javascript" src="{{ page.js | relative_url }}"></script>
   {% endif %}
 </html>
