@@ -10,7 +10,7 @@ js: /assets/pages/blog/js/blog.js
 
 <div class="blog-container">
   {% for post in site.posts %}
-  <a class="blog-links" href="{{ post.url }}">{{ post.date }} - {{ post.title }}</a>
+  <a class="blog-links" href="{{ post.url | relative_url}}">{{ post.date }} - {{ post.title }}</a>
   <br>
   {% endfor %}
 </div>
