@@ -1,15 +1,15 @@
 # OWASP Halifax
 
-OWASP (https://www.owasp.org) is a United States Sec 501(c)(3) not-for-profit charitable
+[OWASP](https://www.owasp.org) is a United States Sec 501(c)(3) not-for-profit charitable
 organisation focused on improving the security of software.
 
-The Open Web Application Security Project (OWASP) Halifax is an OWASP Canadian Chapter
+The Open Web Application Security Project [(OWASP) Halifax](https://owasp.github.io/owasp-halifax) is an OWASP Canadian Chapter
 governed under the rules for Chapter Leaders provided by OWASP.
 
 ## Chapter Leadership
 
-Lilly Chalupowski (https://lillypad.github.io/)
-Tyler Parrott (tyler.parrott@owasp.org)
+[Lilly Chalupowski](https://lillypad.github.io/)
+[Tyler Parrott](mailto:tyler.parrott@owasp.org)
 
 ## Purpose
 OWASP Chapters exist to raise awareness of the OWASP mission, making application security
@@ -33,8 +33,8 @@ OWASP administrative access (including the leader’s owasp.org email address) m
 
 ## Mandatory Rules
 
-The OWASP Halifax Chapter adheres to the OWASP Mandatory Rules:
-(https://www.owasp.org/index.php/Chapter_Handbook/Chapter_2:_Mandatory_Chapter_Rules).
+The OWASP Halifax Chapter adheres to the [OWASP Mandatory Rules
+](https://www.owasp.org/index.php/Chapter_Handbook/Chapter_2:_Mandatory_Chapter_Rules).
 
 ## Core Values
 
@@ -90,7 +90,7 @@ The Chapter meets occassionally to discuss Chapter business and to further
 the aims of OWASP by hosting speakers and discussions.  All minutes
 are recorded in the
 [OWASP/owasp-halifax](https://github.com/OWASP/owasp-halifax) repository
-and published to the OWASP Halifax website (https://owasp.github.io/owasp-halifax)
+and published to the OWASP Halifax website (https://owasp.github.io/owasp-halifax).
 
 ## Consensus Seeking Process
 
@@ -188,11 +188,10 @@ CoC](https://github.com/rust-lang/rust/wiki/Note-development-policy#conduct).
 
 ## Code of Ethics
 
-The OWASP Halifax Chapter fully abides by the OWASP Code of Ethics:
-
-https://www.owasp.org/index.php/About_The_Open_Web_Application_Security_Project#Code_of_Ethics
+The OWASP Halifax Chapter fully abides by the [OWASP Code of Ethics
+](https://www.owasp.org/index.php/About_The_Open_Web_Application_Security_Project#Code_of_Ethics).
 
 ## Attribution
 
-This governance structure has been adapted from [nodejs/docker-node]
-(https://github.com/nodejs/docker-node/blob/master/GOVERNANCE.md).
+This governance structure has been adapted from [nodejs/docker-node
+](https://github.com/nodejs/docker-node/blob/master/GOVERNANCE.md).

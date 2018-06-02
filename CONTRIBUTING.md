@@ -33,12 +33,12 @@ make serve
 
 __Docker Build:__
 ```bash
-sudo docker build -t owasp-halifax .
+docker build -t owasp-halifax .
 ```
 
 __Docker Compose:__
 ```bash
-sudo docker-compose up .
+docker-compose up .
 ```
 
 # Submitting Pull Requests
@@ -124,8 +124,8 @@ cd <repo>
 git config --local user.email [same email from adduid]
 git config --local user.signingkey [key-id]
 git config --local commit.gpgsign true
-
-git commit -a -S -m"This is my first commit!"
+git add .
+git commit -m "This is my first commit!"
 ```
 
 You should now be able to make commits.
