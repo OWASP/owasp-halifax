@@ -23,6 +23,7 @@ RUN npm install -g jshint htmlhint
 RUN useradd -ms /bin/bash ${USER}
 RUN echo "${USER}:${PASS}" | chpasswd
 RUN adduser ${USER} sudo
+RUN echo "jenkins ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 USER ${USER}
 WORKDIR /home/${USER}/
 RUN mkdir -p owasp-halifax/
