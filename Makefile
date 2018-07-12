@@ -7,7 +7,6 @@ all: deps lint site
 update: lint site
 
 deps:
-	bundle install --quiet
 	npm install
 	cp -r node_modules/bootstrap/dist/ assets/lib/bootstrap/
 	cp -r node_modules/popper.js/dist/ assets/lib/popper.js/
