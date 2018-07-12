@@ -3,8 +3,6 @@ author: Lilly Chalupowski
 email: lilly.chalupowski@owasp.org
 description: OWASP Halifax Website
 github_username: lillypad
-plugins:
-  - jekyll-tidy
 include:
   - _pages
   - _slides
