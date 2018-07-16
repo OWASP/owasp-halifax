@@ -4,6 +4,13 @@
     "start": "2018-05-26T13:00:00",
     "end": "2018-05-26T17:00:00",
     "location": "5440 Spring Garden Rd, Halifax, NS B3J 1E9",
-    "description": "We will be meeting at the Pavia inside the Halifax Central Library to see who is interested and to socalize about all things Web Application Security!"
+    "description": "We will be meeting at the Pavia inside the Halifax Central Library to see who is interested and to socalize about all things Web Application Security! https://www.meetup.com/OWASP-Halifax/events/250490854/"
+  },
+  {
+    "title": "OWASP Top 10 with Remediation and Intro to Burpsuite",
+    "start": "2018-07-21T13:00:00",
+    "end": "2018-07-21T16:00:00",
+    "location": "7071 Bayers Rd #225, Halifax, NS B3L 2C2",
+    "description": "Learn what the OWASP (Open Web Application Security Project) is about, how to remediate the OWASP Top 10 and fire up Burpsuite to find flaws in your web applications. https://www.meetup.com/OWASP-Halifax/events/252705971/"
   }
 ]
